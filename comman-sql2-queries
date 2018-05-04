@@ -2,8 +2,8 @@
 
 SELECT [propertynames or * ] 
 FROM [nodetype]
-AS object 
-WHERE ISDESCENDANTNODE('object','path/to/search')
+AS alias 
+WHERE ISDESCENDANTNODE('alias','path/to/search')
 AND
 CONTAINS ('propertyname','value to match')
 ORDER BY [propertyname]
