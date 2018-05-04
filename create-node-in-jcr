@@ -1,4 +1,4 @@
-//Sample Pseudo-Code to Create Node in JCR with some properties
+###Sample Pseudo-Code to Create Node in JCR with some properties
 
 @Reference
 ResourceResolverFactory resolverFactory;
