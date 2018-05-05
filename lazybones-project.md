@@ -23,14 +23,16 @@ sdk install lazybones
 
 
 ### Creat Project ###
-
 lazybones create aem-multimodule-project my-project
 
-⋅⋅*
-+Maven group ID for the generated project : com.organizationname.groupname
-+Maven artifact ID for the generated reactor project : projectname
-+Maven artifact ID for the generated bundle module : projectname.core
-+Maven artifact ID for the generated content package module : projectname.ui.apps
+
+**Maven group ID for the generated project : com.organizationname.groupname
+
+**Maven artifact ID for the generated reactor project : projectname
+
+**Maven artifact ID for the generated bundle module : projectname.core
+
+**Maven artifact ID for the generated content package module : projectname.ui.apps
 
 
 
