@@ -1,4 +1,6 @@
-###Sample Pseudo-Code to Create Node in JCR with some properties
+#Sample Pseudo-Code to Create Node in JCR with some properties
+
+```
 
 @Reference
 ResourceResolverFactory resolverFactory;
@@ -18,6 +20,6 @@ resolver.create(root, "name of node", properties);
 resolver.commit();
 
 resolver.close();
+```
 
-
-// It is sample code 
+**It is sample code 
