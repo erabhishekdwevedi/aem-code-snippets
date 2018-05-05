@@ -1,6 +1,7 @@
-#Using HTL with Java
+#Using HTL with Java Class 
 
-##HTL Code
+
+###HTL Code
 ```
   <div data-sly-use.objectName="com.project.core.MyUseClass">
     	<p> Value from ${objectName.valueFromMyUseClass}
@@ -9,6 +10,7 @@
 
 ###Java Code 
 * It must extends WCMUsePojo or implments Use Interface.
+* Java Class can be local or OSGi based
 
 ```
 package com.project.core;
