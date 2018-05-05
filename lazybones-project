@@ -10,6 +10,7 @@
 * sdk install lazybones
 
 
+
 ## Create Lazybones project
 lazybones create aem-multimodule-project my-project
 
