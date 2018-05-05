@@ -1,4 +1,4 @@
-# Sample Pseudo-Code to Create Node in JCR with some properties
+# Sample code to create node in JCR with some properties.
 
 ```
 
@@ -22,5 +22,5 @@ resolver.commit();
 resolver.close();
 ```
 
-**Create _system user_, assign permission and map in osgi configuration
-**It is sample code 
+**Note: You will also need to create _system user_, assign permission and map to service in osgi configuration
+
