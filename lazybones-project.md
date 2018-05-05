@@ -1,17 +1,24 @@
-#Lazybones
+# Lazybones
 
-##Setup Lazybones on your machine
-#### Run following commands in terminal
-/Get sdkman 
-* curl -s "https://get.sdkman.io" | bash
-/Initiate sdkman
+**Setup Lazybones on your machine **
+
+**1.Run following commands in terminal
+**Get sdkman **
+'''
+curl -s "https://get.sdkman.io" | bash 
+'''
+**Initiate sdkman**
+'''
 * source ~/.sdkman/bin/sdkman-init.sh
-/Install Lazybones using sdkman
-* sdk install lazybones
+'''
+**Install Lazybones using sdkman **
+'''
+sdk install lazybones
+'''
 
 
 
-## Create Lazybones project
+**2.Create Lazybones project
 lazybones create aem-multimodule-project my-project
 
 *Maven group ID for the generated project : com.organizationname.groupname
