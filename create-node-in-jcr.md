@@ -7,7 +7,7 @@ ResourceResolverFactory resolverFactory;
 ResourceResolver resolver = null;
 
 Map<String, Object> param = new HashMap<String, Object>();
-param.put(ResourceResolverFactory.SUBSERVICE, "bomwriter");
+param.put(ResourceResolverFactory.SUBSERVICE, "systemuser");
 resolver = resolverFactory.getServiceResourceResolver(param);
 
 Map<String,Object> properties = new HashMap<String,Object>();
@@ -22,4 +22,5 @@ resolver.commit();
 resolver.close();
 ```
 
+**Create _system user_, assign permission and map in osgi configuration
 **It is sample code 
