@@ -1,0 +1,39 @@
+/*
+
+  <div data-sly-use.object="com.org.project.models.PageModel"/>
+      ${object.title}
+  </div>
+*/
+
+package com.org.project.models;
+
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Required;
+import org.apache.sling.models.annotations.injectorspecific.Self;
+
+import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@Model(
+		adaptables = Resource.class,
+    defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+
+public class PageModel {
+
+    @Self
+    private Resource resource;
+    
+    @Inject @Named("jcr:title") @Required
+    private String title;
+    	
+    @PostConstruct
+    private void init() {
+    }
+    
+    public String getTitle() {
+    	return title;
+    }
+}
