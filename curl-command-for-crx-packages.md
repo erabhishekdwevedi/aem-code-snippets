@@ -1,6 +1,7 @@
-# Curl Command For CRX Packages
+# Curl Command For CRX Packages / AEM Package / Package Manager
 
 #Help Menu
+
 ```curl -u admin:admin http://localhost:4502/crx/packmgr/service.jsp?cmd=help ```
 
 0. Create a package on Author
