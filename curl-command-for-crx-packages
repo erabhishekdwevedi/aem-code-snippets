@@ -15,3 +15,6 @@ curl -u admin:admin -F package=@"1.zip" http://localhost:4503/crx/packmgr/servic
 
 ## Install Package on Publish
 curl -u admin:admin -X POST http://localhost:4503/crx/packmgr/service/.json/etc/packages/my_packages/1.zip?cmd=build
+
+## Force Upload Package
+curl -u admin:admin -F force=true -F install=true -F package=@"1.zip" http://localhost:4503/crx/packmgr/service/.json/?cmd=upload
