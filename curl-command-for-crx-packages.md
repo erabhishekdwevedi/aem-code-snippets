@@ -1,0 +1,29 @@
+# Curl Command For CRX Packages
+
+#Help Menu
+```curl -u admin:admin http://localhost:4502/crx/packmgr/service.jsp?cmd=help ```
+
+0. Create a package on Author
+
+## Build Package
+
+```curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/1.zip?cmd=build```
+
+## Download Package to Local Machine
+```curl -u admin:admin http://localhost:4502/etc/packages/my_packages/1.zip > 1.zip```
+
+## Install Package 
+```curl -u admin:admin -F package=@"1.zip" http://localhost:4503/crx/packmgr/service/.json/?cmd=upload```
+
+## Install Package on Publish
+```curl -u admin:admin -X POST http://localhost:4503/crx/packmgr/service/.json/etc/packages/my_packages/1.zip?cmd=build```
+
+## Uninstall Package
+
+```curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/1.zip?cmd=uninstall```
+
+## Force Upload Package
+```curl -u admin:admin -F force=true -F install=true -F package=@"1.zip" http://localhost:4503/crx/packmgr/service/.json/?cmd=upload```
+
+## Delete Package
+```curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/1.zip?cmd=delete```
