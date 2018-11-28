@@ -4,7 +4,13 @@
 
 ```curl -u admin:admin http://localhost:4502/crx/packmgr/service.jsp?cmd=help ```
 
-0. Create a package on Author
+## List All Packages
+```curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service.jsp?cmd=ls```
+
+## Create a package on Author
+```
+curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/testpackage?cmd=create -d packageName=1 -d groupName=my_packages
+```
 
 ## Build Package
 
